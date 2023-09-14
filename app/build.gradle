@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.javagradletest'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.javagradletest"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //UI
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    //Stripe
+    implementation 'com.stripe:stripe-android:20.30.0'
+    implementation("com.github.kittinunf.fuel:fuel:3.0.0-alpha1")
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.2.3')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-storage")
+    implementation("com.google.firebase:firebase-messaging")
+
+    implementation group: 'com.github.seratch', name: 'java-time-backport', version: '1.0.0'
+
+    //Image Libraries
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+    //HTTP
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0' // Use the appropriate version
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //Google Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation "com.google.android.gms:play-services-location:21.0.1"
+    implementation 'com.google.maps:google-maps-services:0.17.0'
+
+
+    implementation 'com.google.android.libraries.places:places:3.1.0'
+    //GeoFire
+    implementation 'com.firebase:geofire-android:3.2.0'
+    implementation 'com.firebase:geofire-android-common:3.2.0'
+
+    //Payments
+    implementation 'com.braintreepayments.api:drop-in:3.7.0'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+
+
+
+
+
+}

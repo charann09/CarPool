@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/layout_center_viewpager"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/removeableLayout">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/signup_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            card_view:srcCompat="@drawable/carpool_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:text="WELCOME TO CARPOOL"
+            android:fontFamily="@font/main"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="278dp"
+            android:text="Carpooling made easy"
+            android:fontFamily="@font/madeleina"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:layout_width="390dp"
+            android:layout_height="220dp"
+            card_view:cardCornerRadius="13dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                android:paddingBottom="0dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GET CONNECTED WITH GOPOOL"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/main"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="16dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+
+                    android:id="@+id/textInputLayout1">
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:width="400dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/passwordLayout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/textInputLayout1">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInputLayout2">
+
+                        <EditText
+                            android:id="@+id/passwordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/emailEditText"
+                            android:layout_centerHorizontal="true"
+                            android:width="400dp"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_password"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="sans-serif"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="8dp"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/textInputLayout2"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/red"
+                        android:fontFamily="@font/madeleina"
+                        android:text="LOG IN"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+                <!-- Sign up with other -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/half_card">
+
+                    <TextView
+                        android:id="@+id/btn_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Or sign up with other"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="30dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/font"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_loading"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            card_view:cardCornerRadius="13dp">
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:indeterminateTint="@color/link_blue"
+                android:id="@+id/loginRequestProgressBar"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loadingPleaseWait"
+                android:textColor="@color/black"
+                android:text="Loading..."
+                android:textAlignment="center"
+                android:layout_gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:layout_marginBottom="7dp"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</merge>

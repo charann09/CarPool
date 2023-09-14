@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundRelativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/relLayout1">
+
+
+
+
+            <!-- Username layout -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernameLayout">
+
+                <EditText
+                    android:id="@+id/usernameStepTwoEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:width="400dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_username"
+                    android:drawableRight="@drawable/ic_tick"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/nextBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameLayout"
+                android:layout_alignRight="@id/usernameLayout"
+                android:layout_marginBottom="23.5dp"
+                android:background="@color/red"
+                android:fontFamily="@font/madeleina"
+                android:text="Next"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:translationX="-10dp"
+                android:translationY="20dp" />
+        </RelativeLayout>
+</RelativeLayout>
+</merge>

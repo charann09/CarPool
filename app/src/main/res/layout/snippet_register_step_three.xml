@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgroundRelativeLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/relLayout1">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/registrationPicture"
+                    android:src="@drawable/ic_change_picture"
+                    android:layout_centerHorizontal="true"/>
+
+
+                <!-- Full name layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/registrationPicture"
+                    android:id="@+id/fullnameLayout">
+
+                    <EditText
+                        android:id="@+id/fullnameStepThreeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:width="400dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_fullname"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:hint="Full name"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fullnameLayout"
+                    android:id="@+id/dobLayout">
+
+                    <EditText
+                        android:id="@+id/dobStepThreeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:width="400dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_dob"
+                        android:drawablePadding="10dp"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif"
+                        android:hint="Date of birth"
+                        android:inputType="textNoSuggestions"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- Mobile number layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dobLayout"
+                    android:id="@+id/usernameLayout">
+
+                    <EditText
+                        android:id="@+id/mobileStepThreeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:width="400dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:hint="Mobile number"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile number layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usernameLayout"
+                    android:id="@+id/workLayout">
+
+                    <EditText
+                        android:id="@+id/workEditTextStepThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:width="400dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_work"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#838383"
+                        android:fontFamily="sans-serif"
+                        android:hint="Work place"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile number layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/workLayout"
+                    android:id="@+id/educationLayout">
+
+                    <EditText
+                        android:id="@+id/educationEditTextStepThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:width="400dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_education"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#838383"
+                        android:fontFamily="sans-serif"
+                        android:hint="Education"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile number layout -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/educationLayout"
+                    android:id="@+id/bioLayout">
+
+                    <EditText
+                        android:id="@+id/bioEditTextStepThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:width="400dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_bio"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#838383"
+                        android:fontFamily="sans-serif"
+                        android:hint="Tell us a bit about yourself"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <!-- Gender layout -->
+                <RadioGroup
+                    android:checkedButton="@+id/offerButton"
+                    android:id="@+id/genderToggle"
+                    android:layout_width="match_parent"
+                   android:layout_margin="15dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bioLayout"
+                    android:background="@drawable/green_out_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:id="@+id/femaleButton"
+                        android:background="@drawable/toggle_widget_green_background"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Female"
+                        android:textColor="@color/darkgrey" />
+
+                    <RadioButton
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:id="@+id/maleButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_widget_green_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Male"
+                        android:textColor="@color/darkgrey" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/nextBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genderToggle"
+                    android:layout_alignRight="@id/genderToggle"
+                    android:layout_marginBottom="23.5dp"
+                    android:background="@color/red"
+                    android:fontFamily="@font/madeleina"
+                    android:text="Next"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+    </RelativeLayout>
+</merge>
